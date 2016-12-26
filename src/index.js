@@ -1,7 +1,9 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import Login from './components/Login/Login';
+import renderRouter from './routes.js';
 import './application.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<Login />, document.getElementById('app'));
+ReactDOM.render(
+  renderRouter(),
+  document.getElementById('app')
+);
